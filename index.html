@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filé's Burgers — Eat Local! San Antonio, TX</title>
+  <meta name="description" content="Small family-owned burger joint in San Antonio, TX. Serving awesome burgers, nachos & crispy tacos. Order to-go or dine-in!">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="https://0201.nccdn.net/4_2/000/000/051/72c/file---s-burgers.png">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="https://0201.nccdn.net/4_2/000/000/051/72c/file---s-burgers.png" alt="Filé's Burgers">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:2102671330" class="nav-phone">📞 210.267.1330</a>
+        <a href="menu.html" class="btn-order">Order Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Our Menu</a>
+    <a href="#location">Location</a>
+    <a href="#about">About</a>
+    <a href="tel:2102671330">📞 210.267.1330</a>
+    <a href="menu.html" class="btn-order-mob">Order Now</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-slides">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-bg" style="background-image: url('https://0201.nccdn.net/4_2/000/000/03f/ac7/logos.png'); background-color: #1a0a08;"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-tag">#EatLocal San Antonio</span>
+          <h1 class="hero-title">Filé's Burgers<br><span>Eat Local!</span></h1>
+          <p class="hero-sub">A small, family-owned burger joint serving up awesome burgers, nachos & crispy tacos right in the heart of San Antonio.</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn-primary">View Our Menu →</a>
+            <a href="#location" class="btn-secondary">Find Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: url('https://0201.nccdn.net/4_2/000/000/081/52e/bones-on-skateboard.png'); background-color: #111;"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-tag">Order To-Go or Dine-In</span>
+          <h1 class="hero-title">Real Food.<br><span>Real Flavor.</span></h1>
+          <p class="hero-sub">Handcrafted burgers made fresh to order. Come hungry, leave happy. That's the Filé's promise.</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn-primary">Order To-Go →</a>
+            <a href="#hours" class="btn-secondary">See Hours</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: url('https://0201.nccdn.net/1_2/000/000/093/b62/835628-finalist-c51ce.w1024.jpg'); background-color: #1a1a1a;"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-tag">Award Winning</span>
+          <h1 class="hero-title">San Antonio's<br><span>Favorite Burger</span></h1>
+          <p class="hero-sub">Recognized by Restaurant Guru & the local community. Thank you for supporting small, family-owned businesses.</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn-primary">Explore Menu →</a>
+            <a href="#about" class="btn-secondary">Our Story</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Dots -->
+    <div class="hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+      <span class="hero-dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY STRIP ===== -->
+  <div class="category-strip">
+    <div class="category-strip-inner">
+      <a href="menu.html#burgers" class="cat-item active">
+        <div class="cat-icon">🍔</div>
+        Burgers
+      </a>
+      <a href="menu.html#nachos" class="cat-item">
+        <div class="cat-icon">🧀</div>
+        Nachos
+      </a>
+      <a href="menu.html#tacos" class="cat-item">
+        <div class="cat-icon">🌮</div>
+        Tacos
+      </a>
+      <a href="menu.html#sides" class="cat-item">
+        <div class="cat-icon">🍟</div>
+        Sides
+      </a>
+      <a href="menu.html#specials" class="cat-item">
+        <div class="cat-icon">⭐</div>
+        Specials
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== POPULAR ITEMS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div>
+          <h2 class="section-title">Most <span>Popular</span></h2>
+          <p class="section-subtitle">Our crowd favorites — fresh, handcrafted, and absolutely worth every bite.</p>
+          <div class="divider"></div>
+        </div>
+        <a href="menu.html" class="view-all">View Full Menu →</a>
+      </div>
+      <div class="products-grid">
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🥓</div>
+            <span class="product-badge">Fan Fave</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Bacon Deluxe</div>
+            <div class="product-desc">Our signature burger loaded with crispy bacon, fresh toppings & house sauce.</div>
+            <div class="product-footer">
+              <span class="product-price">Order In-Store</span>
+              <a href="menu.html" class="btn-add" title="See on menu">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🧀</div>
+            <span class="product-badge">Best Seller</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Double Cheezy Deluxe</div>
+            <div class="product-desc">Double patty, double cheese — the ultimate cheese lover's burger.</div>
+            <div class="product-footer">
+              <span class="product-price">Order In-Store</span>
+              <a href="menu.html" class="btn-add" title="See on menu">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🍗</div>
+            <span class="product-badge badge-new">Try It</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Grilled Chick'n</div>
+            <div class="product-desc">Juicy grilled chicken breast with lettuce, tomato & our special sauce.</div>
+            <div class="product-footer">
+              <span class="product-price">Order In-Store</span>
+              <a href="menu.html" class="btn-add" title="See on menu">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🌮</div>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Crispy Tacos</div>
+            <div class="product-desc">Crunchy shells filled with seasoned beef, cheese, lettuce & salsa.</div>
+            <div class="product-footer">
+              <span class="product-price">Order In-Store</span>
+              <a href="menu.html" class="btn-add" title="See on menu">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO BANNERS ===== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="promo-banner fade-up">
+        <div class="promo-content">
+          <span class="promo-tag">Eat Local · San Antonio</span>
+          <h2 class="promo-title">Order To-Go<br>OR Dine-In</h2>
+          <p class="promo-text">We're right here in the neighborhood. Swing by or call ahead — your order will be hot and ready.</p>
+          <a href="tel:2102671330" class="btn-primary">Call to Order →</a>
+        </div>
+      </div>
+      <div class="promo-pair fade-up">
+        <div class="promo-mini promo-mini-red">
+          <div class="promo-mini-title">Loaded Nachos</div>
+          <div class="promo-mini-sub">Classic or fully loaded — your choice, your toppings.</div>
+          <a href="menu.html#nachos" class="btn-white">See Nachos →</a>
+        </div>
+        <div class="promo-mini promo-mini-dark">
+          <div class="promo-mini-title">Cheeze Fries &amp; Tots</div>
+          <div class="promo-mini-sub">Crispy sides drowning in house cheese sauce.</div>
+          <a href="menu.html#sides" class="btn-white">See Sides →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FULL MENU PREVIEW ===== -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div>
+          <h2 class="section-title">Our Full <span>Menu</span></h2>
+          <p class="section-subtitle">Burgers, nachos, tacos, sides & more. Something for everyone.</p>
+          <div class="divider"></div>
+        </div>
+        <a href="menu.html" class="view-all">See All Items →</a>
+      </div>
+      <div class="products-grid">
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🍔</div>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The American Cheeseburger</div>
+            <div class="product-desc">Classic American style — simple, satisfying, and done right.</div>
+            <div class="product-footer">
+              <span class="product-price">Dine-In / To-Go</span>
+              <a href="menu.html" class="btn-add">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🥗</div>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Low Carb Burger</div>
+            <div class="product-desc">All the flavor, none of the bun. Wrapped and ready for you.</div>
+            <div class="product-footer">
+              <span class="product-price">Dine-In / To-Go</span>
+              <a href="menu.html" class="btn-add">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🧀</div>
+          </div>
+          <div class="product-body">
+            <div class="product-name">The Classic Nachos</div>
+            <div class="product-desc">Crispy chips, melted cheese, jalapeños & all the fixings.</div>
+            <div class="product-footer">
+              <span class="product-price">Dine-In / To-Go</span>
+              <a href="menu.html" class="btn-add">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🍟</div>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Filé's Loaded Fries</div>
+            <div class="product-desc">House fries piled high with cheese, toppings & signature sauce.</div>
+            <div class="product-footer">
+              <span class="product-price">Dine-In / To-Go</span>
+              <a href="menu.html" class="btn-add">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HASHTAG BANNER ===== -->
+  <div class="hashtag-banner">
+    <div class="hashtag-track">
+      <span>#EATLOCAL</span><span class="sep">✦</span>
+      <span>#FILESBURGERS</span><span class="sep">✦</span>
+      <span>SAN ANTONIO TX</span><span class="sep">✦</span>
+      <span>HANDCRAFTED BURGERS</span><span class="sep">✦</span>
+      <span>#EATLOCAL</span><span class="sep">✦</span>
+      <span>ORDER TO-GO</span><span class="sep">✦</span>
+      <span>DINE-IN WELCOME</span><span class="sep">✦</span>
+      <span>FAMILY OWNED</span><span class="sep">✦</span>
+      <span>#EATLOCAL</span><span class="sep">✦</span>
+      <span>#FILESBURGERS</span><span class="sep">✦</span>
+      <span>SAN ANTONIO TX</span><span class="sep">✦</span>
+      <span>HANDCRAFTED BURGERS</span><span class="sep">✦</span>
+      <span>#EATLOCAL</span><span class="sep">✦</span>
+      <span>ORDER TO-GO</span><span class="sep">✦</span>
+      <span>DINE-IN WELCOME</span><span class="sep">✦</span>
+      <span>FAMILY OWNED</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT / EAT LOCAL ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap fade-up">
+          <img src="https://0201.nccdn.net/4_2/000/000/03f/ac7/logos.png" alt="Filé's Burgers - Eat Local">
+          <div class="about-img-badge">Family<br>Owned &<br>Operated</div>
+        </div>
+        <div class="about-content fade-up">
+          <span class="about-tag">Our Story</span>
+          <h2 class="about-title">Just a Small Family<br><span>Doing Big Flavors</span></h2>
+          <p class="about-text">We're Filé's Burgers — a small, family-owned burger joint right here in San Antonio, TX. We started simple: make awesome food, treat people right, and support the local community.</p>
+          <p class="about-text">From our handcrafted burgers to our crispy tacos and loaded nachos, every item on our menu is made with care. We believe in real food, real flavor, and keeping it local.</p>
+          <p class="about-text">Thank you for <strong style="color: var(--red);">#EatingLocal</strong> and supporting small businesses like ours.</p>
+          <div class="about-awards">
+            <div class="award-item">
+              <img src="https://0201.nccdn.net/1_2/000/000/093/b62/835628-finalist-c51ce.w1024.jpg" alt="Award Finalist">
+              <div class="award-text">Award<br>Finalist</div>
+            </div>
+            <div class="award-item">
+              <img src="https://0201.nccdn.net/1_2/000/000/159/d22/867647-latino-45c48.png" alt="Latino Business">
+              <div class="award-text">Latino<br>Business</div>
+            </div>
+            <div class="award-item">
+              <span style="font-size:24px;">⭐</span>
+              <div class="award-text" style="color:rgba(255,255,255,.7);">Restaurant<br>Guru 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS & LOCATION ===== -->
+  <section class="section" id="location" style="background: var(--grey);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div>
+          <h2 class="section-title">Hours &amp; <span>Location</span></h2>
+          <p class="section-subtitle">Come visit us at 543 Ceralvo Street, San Antonio, TX.</p>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <div class="info-grid" id="hours">
+        <div class="info-card fade-up">
+          <div class="info-icon">🕐</div>
+          <div class="info-card-title">Hours of Operation</div>
+          <ul class="hours-list">
+            <li class="hours-row"><span class="hours-day">Monday</span><span class="hours-closed">Closed</span></li>
+            <li class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time">11:00 am – 8:00 pm</span></li>
+            <li class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">11:00 am – 8:00 pm</span></li>
+            <li class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">11:00 am – 8:00 pm</span></li>
+            <li class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">11:00 am – 9:00 pm</span></li>
+            <li class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">12:00 pm – 9:00 pm</span></li>
+            <li class="hours-row"><span class="hours-day">Sunday</span><span class="hours-closed">Closed</span></li>
+          </ul>
+        </div>
+        <div class="info-card fade-up">
+          <div class="info-icon">📍</div>
+          <div class="info-card-title">Find Us</div>
+          <p class="address-text">
+            543 Ceralvo Street<br>
+            San Antonio, TX 78207<br><br>
+            <strong>Phone:</strong> 210.267.1330<br>
+            <strong>Email:</strong> filesburgers@gmail.com
+          </p>
+          <a href="http://maps.google.com/?q=543+Ceralvo+Street,+78207,+San+Antonio,+TX,+US" target="_blank" rel="noopener" class="address-link">
+            Get Directions →
+          </a>
+        </div>
+        <div class="info-card fade-up">
+          <div class="info-icon">📱</div>
+          <div class="info-card-title">Follow Us</div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/filesburgers" target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon">👍</span> Facebook
+            </a>
+            <a href="https://instagram.com/filesburgers" target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon">📸</span> Instagram
+            </a>
+            <a href="https://twitter.com/filesburgers" target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon">🐦</span> Twitter
+            </a>
+            <a href="mailto:filesburgers@gmail.com" class="social-link">
+              <span class="social-icon">✉️</span> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://0201.nccdn.net/4_2/000/000/051/72c/file---s-burgers.png" alt="Filé's Burgers">
+          <p>A small, family-owned burger joint in San Antonio, TX. Serving awesome burgers, nachos & crispy tacos since day one. #EatLocal</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/filesburgers" target="_blank" rel="noopener" title="Facebook">👍</a>
+            <a href="https://instagram.com/filesburgers" target="_blank" rel="noopener" title="Instagram">📸</a>
+            <a href="https://twitter.com/filesburgers" target="_blank" rel="noopener" title="Twitter">🐦</a>
+            <a href="mailto:filesburgers@gmail.com" title="Email">✉️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#hours">Hours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Menu</div>
+          <ul>
+            <li><a href="menu.html#burgers">Burgers</a></li>
+            <li><a href="menu.html#nachos">Nachos</a></li>
+            <li><a href="menu.html#tacos">Tacos</a></li>
+            <li><a href="menu.html#sides">Sides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contact</div>
+          <ul>
+            <li><a href="tel:2102671330">📞 210.267.1330</a></li>
+            <li><a href="mailto:filesburgers@gmail.com">✉️ Email Us</a></li>
+            <li><a href="http://maps.google.com/?q=543+Ceralvo+Street,+78207,+San+Antonio,+TX,+US" target="_blank" rel="noopener">📍 543 Ceralvo St, SA TX</a></li>
+            <li><a href="https://restaurantguru.com/Files-Burgers-San-Antonio" target="_blank" rel="noopener">⭐ Restaurant Guru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Filé's Burgers · San Antonio, TX · <a href="tel:2102671330">210.267.1330</a></p>
+        <p>Closed Sundays & Mondays · <strong>#EatLocal</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
