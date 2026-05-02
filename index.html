@@ -126,73 +126,114 @@
     </div>
   </div>
 
-  <!-- ===== POPULAR ITEMS ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-up">
-        <div>
-          <h2 class="section-title">Most <span>Popular</span></h2>
-          <p class="section-subtitle">Our crowd favorites — fresh, handcrafted, and absolutely worth every bite.</p>
-          <div class="divider"></div>
+  <!-- ===== FEATURED CARD SLIDER ===== -->
+  <section class="featured-section">
+    <div class="featured-header">
+      <div class="container">
+        <div class="featured-header-inner">
+          <div>
+            <h2 class="section-title">Most <span>Popular</span></h2>
+            <p class="section-subtitle">Fresh, handcrafted, and worth every bite.</p>
+          </div>
+          <div class="featured-nav">
+            <button class="feat-btn feat-prev" id="featPrev" aria-label="Previous">&#8592;</button>
+            <button class="feat-btn feat-next" id="featNext" aria-label="Next">&#8594;</button>
+          </div>
         </div>
-        <a href="menu.html" class="view-all">View Full Menu →</a>
       </div>
-      <div class="products-grid">
-        <div class="product-card fade-up">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80&fit=crop&auto=format" alt="The Bacon Deluxe">
-            <span class="product-badge">Fan Fave</span>
+    </div>
+
+    <div class="feat-track-wrap">
+      <div class="feat-track" id="featTrack">
+
+        <a href="menu.html#burgers" class="feat-card">
+          <span class="feat-cat">Burgers</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&q=85&fit=crop&auto=format" alt="The Bacon Deluxe">
           </div>
-          <div class="product-body">
-            <div class="product-name">The Bacon Deluxe</div>
-            <div class="product-desc">Our signature burger loaded with crispy bacon, fresh toppings & house sauce.</div>
-            <div class="product-footer">
-              <span class="product-price">Order In-Store</span>
-              <a href="menu.html" class="btn-add" title="See on menu">+</a>
-            </div>
+          <div class="feat-info">
+            <div class="feat-name">The Bacon<br>Deluxe</div>
+            <span class="feat-badge">Fan Fave</span>
           </div>
-        </div>
-        <div class="product-card fade-up">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80&fit=crop&auto=format" alt="The Double Cheezy Deluxe">
-            <span class="product-badge">Best Seller</span>
+        </a>
+
+        <a href="menu.html#burgers" class="feat-card feat-card--gold">
+          <span class="feat-cat">Burgers</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&q=85&fit=crop&auto=format" alt="Double Cheezy Deluxe">
           </div>
-          <div class="product-body">
-            <div class="product-name">The Double Cheezy Deluxe</div>
-            <div class="product-desc">Double patty, double cheese — the ultimate cheese lover's burger.</div>
-            <div class="product-footer">
-              <span class="product-price">Order In-Store</span>
-              <a href="menu.html" class="btn-add" title="See on menu">+</a>
-            </div>
+          <div class="feat-info">
+            <div class="feat-name">Double Cheezy<br>Deluxe</div>
+            <span class="feat-badge feat-badge--gold">Best Seller</span>
           </div>
-        </div>
-        <div class="product-card fade-up">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80&fit=crop&auto=format" alt="The Grilled Chick'n">
-            <span class="product-badge badge-new">Try It</span>
+        </a>
+
+        <a href="menu.html#burgers" class="feat-card feat-card--dark">
+          <span class="feat-cat feat-cat--light">Burgers</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&q=85&fit=crop&auto=format" alt="Grilled Chick'n">
           </div>
-          <div class="product-body">
-            <div class="product-name">The Grilled Chick'n</div>
-            <div class="product-desc">Juicy grilled chicken breast with lettuce, tomato & our special sauce.</div>
-            <div class="product-footer">
-              <span class="product-price">Order In-Store</span>
-              <a href="menu.html" class="btn-add" title="See on menu">+</a>
-            </div>
+          <div class="feat-info">
+            <div class="feat-name feat-name--light">Grilled<br>Chick'n</div>
+            <span class="feat-badge feat-badge--light">Try It</span>
           </div>
-        </div>
-        <div class="product-card fade-up">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80&fit=crop&auto=format" alt="The Crispy Tacos">
+        </a>
+
+        <a href="menu.html#nachos" class="feat-card">
+          <span class="feat-cat">Nachos</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=85&fit=crop&auto=format" alt="Classic Nachos">
           </div>
-          <div class="product-body">
-            <div class="product-name">The Crispy Tacos</div>
-            <div class="product-desc">Crunchy shells filled with seasoned beef, cheese, lettuce & salsa.</div>
-            <div class="product-footer">
-              <span class="product-price">Order In-Store</span>
-              <a href="menu.html" class="btn-add" title="See on menu">+</a>
-            </div>
+          <div class="feat-info">
+            <div class="feat-name">Classic<br>Nachos</div>
+            <span class="feat-badge">Must Try</span>
           </div>
-        </div>
+        </a>
+
+        <a href="menu.html#tacos" class="feat-card feat-card--red">
+          <span class="feat-cat feat-cat--light">Tacos</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=700&q=85&fit=crop&auto=format" alt="Crispy Tacos">
+          </div>
+          <div class="feat-info">
+            <div class="feat-name feat-name--light">Crispy<br>Tacos</div>
+            <span class="feat-badge feat-badge--light">Local Fave</span>
+          </div>
+        </a>
+
+        <a href="menu.html#sides" class="feat-card feat-card--gold">
+          <span class="feat-cat">Sides</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb964701c394?w=700&q=85&fit=crop&auto=format" alt="Cheeze Fries">
+          </div>
+          <div class="feat-info">
+            <div class="feat-name">Cheeze<br>Fries</div>
+            <span class="feat-badge feat-badge--gold">House Hit</span>
+          </div>
+        </a>
+
+        <a href="menu.html#sides" class="feat-card">
+          <span class="feat-cat">Sides</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1598679253544-2c97992403cd?w=700&q=85&fit=crop&auto=format" alt="Onion Rings">
+          </div>
+          <div class="feat-info">
+            <div class="feat-name">Onion<br>Rings</div>
+            <span class="feat-badge">Crispy</span>
+          </div>
+        </a>
+
+        <a href="menu.html#nachos" class="feat-card feat-card--dark">
+          <span class="feat-cat feat-cat--light">Nachos</span>
+          <div class="feat-img">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=700&q=85&fit=crop&auto=format" alt="Loaded Nachos">
+          </div>
+          <div class="feat-info">
+            <div class="feat-name feat-name--light">Loaded<br>Nachos</div>
+            <span class="feat-badge feat-badge--light">Loaded</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>

@@ -93,6 +93,24 @@
     fadeEls.forEach(el => el.classList.add('visible'));
   }
 
+  /* ── Featured Card Slider (prev/next arrows) ── */
+  const featTrack = document.getElementById('featTrack');
+  const featPrev  = document.getElementById('featPrev');
+  const featNext  = document.getElementById('featNext');
+
+  if (featTrack && featPrev && featNext) {
+    const cardWidth = () => {
+      const card = featTrack.querySelector('.feat-card');
+      return card ? card.offsetWidth + 18 : 268;
+    };
+    featNext.addEventListener('click', () => {
+      featTrack.scrollBy({ left: cardWidth() * 2, behavior: 'smooth' });
+    });
+    featPrev.addEventListener('click', () => {
+      featTrack.scrollBy({ left: -cardWidth() * 2, behavior: 'smooth' });
+    });
+  }
+
   /* ── Menu Page: Sticky Category Nav + Scroll Spy ── */
   const menuCatBtns = document.querySelectorAll('.menu-cat-btn');
   const menuSections = document.querySelectorAll('.menu-section');
