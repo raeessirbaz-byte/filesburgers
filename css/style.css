@@ -7,17 +7,18 @@
 
 /* ── Custom Properties ── */
 :root {
-  --red:       #D42B25;
-  --red-dark:  #A81F1A;
-  --red-light: #FF4A44;
+  --red:       #E8180C;   /* logo vivid red   */
+  --red-dark:  #B81208;
+  --red-light: #FF3D30;
+  --gold:      #F7B731;   /* logo golden yellow */
+  --gold-dark: #E09E18;
   --black:     #111111;
-  --dark:      #1C1C1C;
-  --dark-2:    #2A2A2A;
-  --grey:      #F4F2EE;
-  --grey-2:    #E8E5DF;
-  --muted:     #777777;
+  --dark:      #1A1A1A;
+  --dark-2:    #272727;
+  --grey:      #FBF8F4;
+  --grey-2:    #EDE8E0;
+  --muted:     #6E6E6E;
   --white:     #FFFFFF;
-  --gold:      #F5A623;
   --nav-h:     68px;
   --radius:    10px;
   --shadow:    0 2px 16px rgba(0,0,0,.10);
@@ -82,12 +83,12 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   position: absolute;
   bottom: -4px; left: 0;
   width: 0; height: 2px;
-  background: var(--red);
+  background: var(--gold);
   transition: width var(--transition);
 }
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--gold); }
 .nav-links a:hover::after { width: 100%; }
-.nav-links a.active { color: var(--white); }
+.nav-links a.active { color: var(--gold); }
 .nav-links a.active::after { width: 100%; }
 
 .nav-actions {
@@ -96,17 +97,17 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   gap: 14px;
 }
 .btn-order {
-  background: var(--red);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--dark);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .8px;
   padding: 10px 22px;
   border-radius: 6px;
   transition: background var(--transition), transform var(--transition);
 }
-.btn-order:hover { background: var(--red-dark); transform: translateY(-1px); }
+.btn-order:hover { background: var(--gold-dark); transform: translateY(-1px); }
 
 .nav-phone {
   color: #AAA;
@@ -166,8 +167,8 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 .mobile-menu .btn-order-mob {
   display: block;
   margin-top: 20px;
-  background: var(--red);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--dark);
   text-align: center;
   padding: 14px;
   border-radius: 8px;
@@ -220,10 +221,10 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 }
 .hero-tag {
   display: inline-block;
-  background: var(--red);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--dark);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 5px 12px;
@@ -294,7 +295,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   transition: background var(--transition), width var(--transition);
   cursor: pointer;
 }
-.hero-dot.active { background: var(--red); width: 24px; border-radius: 4px; }
+.hero-dot.active { background: var(--gold); width: 24px; border-radius: 4px; }
 
 /* =========================================================
    CATEGORY STRIP
@@ -335,8 +336,8 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   letter-spacing: .8px;
   white-space: nowrap;
 }
-.cat-item:hover { color: var(--red); border-bottom-color: var(--red); }
-.cat-item.active { color: var(--red); border-bottom-color: var(--red); }
+.cat-item:hover { color: var(--red); border-bottom-color: var(--gold); }
+.cat-item.active { color: var(--red); border-bottom-color: var(--gold); }
 .cat-icon {
   width: 46px; height: 46px;
   border-radius: 50%;
@@ -351,8 +352,8 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 }
 .cat-item:hover .cat-icon,
 .cat-item.active .cat-icon {
-  border-color: var(--red);
-  box-shadow: 0 0 0 3px rgba(212,43,37,.15);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(247,183,49,.2);
 }
 
 /* =========================================================
@@ -386,17 +387,17 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 .view-all {
   color: var(--red);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 4px;
   white-space: nowrap;
-  transition: gap var(--transition);
+  transition: gap var(--transition), color var(--transition);
 }
-.view-all:hover { gap: 8px; }
+.view-all:hover { gap: 8px; color: var(--red-dark); }
 .divider {
   width: 48px; height: 3px;
-  background: var(--red);
+  background: var(--gold);
   border-radius: 2px;
   margin-top: 10px;
 }
@@ -478,20 +479,20 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   justify-content: space-between;
 }
 .btn-add {
-  background: var(--red);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--dark);
   width: 32px; height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1;
   transition: background var(--transition), transform var(--transition);
   flex-shrink: 0;
 }
-.btn-add:hover { background: var(--red-dark); transform: scale(1.12); }
+.btn-add:hover { background: var(--gold-dark); transform: scale(1.12); }
 .product-price { font-size: 15px; font-weight: 700; color: var(--dark); }
 
 /* =========================================================
@@ -601,7 +602,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 }
 .info-icon {
   width: 48px; height: 48px;
-  background: rgba(212,43,37,.1);
+  background: rgba(247,183,49,.15);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -635,6 +636,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   align-items: center;
   gap: 6px;
   color: var(--red);
+  font-weight: 600;
   font-size: 13px;
   font-weight: 600;
   margin-top: 12px;
@@ -654,7 +656,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   color: var(--dark);
   transition: background var(--transition), color var(--transition);
 }
-.social-link:hover { background: var(--red); color: var(--white); }
+.social-link:hover { background: var(--gold); color: var(--dark); }
 .social-icon { font-size: 18px; width: 24px; text-align: center; }
 
 /* =========================================================
@@ -699,8 +701,8 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 .about-content {}
 .about-tag {
   display: inline-block;
-  background: rgba(212,43,37,.15);
-  color: var(--red);
+  background: rgba(247,183,49,.15);
+  color: var(--gold);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -708,7 +710,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   padding: 5px 12px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid rgba(212,43,37,.3);
+  border: 1px solid rgba(247,183,49,.35);
 }
 .about-title {
   font-family: 'Oswald', sans-serif;
@@ -738,7 +740,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
    HASHTAG BANNER
    ========================================================= */
 .hashtag-banner {
-  background: var(--red);
+  background: var(--gold);
   padding: 22px 0;
   overflow: hidden;
 }
@@ -749,15 +751,15 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   white-space: nowrap;
 }
 .hashtag-track span {
-  color: rgba(255,255,255,.9);
+  color: var(--dark);
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   flex-shrink: 0;
 }
-.hashtag-track span.sep { color: rgba(255,255,255,.4); }
+.hashtag-track span.sep { color: var(--red); }
 @keyframes scrollLeft {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -769,7 +771,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 footer {
   background: var(--black);
   padding: 60px 0 0;
-  border-top: 3px solid var(--red);
+  border-top: 3px solid var(--gold);
 }
 .footer-grid {
   display: grid;
@@ -793,7 +795,7 @@ footer {
   color: #888;
   transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
-.footer-social a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+.footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--dark); }
 .footer-col-title {
   color: var(--white);
   font-size: 12px;
@@ -811,7 +813,7 @@ footer {
   align-items: center;
   gap: 6px;
 }
-.footer-col ul a:hover { color: var(--red); }
+.footer-col ul a:hover { color: var(--gold); }
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -821,7 +823,7 @@ footer {
   gap: 10px;
 }
 .footer-bottom p { color: #555; font-size: 12px; }
-.footer-bottom a { color: var(--red); }
+.footer-bottom a { color: var(--gold); }
 
 /* =========================================================
    MENU PAGE — Sticky Category Nav
@@ -883,7 +885,7 @@ footer {
   cursor: pointer;
 }
 .menu-cat-btn:hover { color: var(--dark); }
-.menu-cat-btn.active { color: var(--red); border-bottom-color: var(--red); }
+.menu-cat-btn.active { color: var(--red); border-bottom-color: var(--gold); }
 
 .menu-section { padding: 56px 0 32px; scroll-margin-top: calc(var(--nav-h) + 56px); }
 .menu-section-title {
