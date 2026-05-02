@@ -208,7 +208,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, rgba(17,17,17,.82) 0%, rgba(17,17,17,.38) 60%, rgba(17,17,17,.08) 100%);
+  background: linear-gradient(105deg, rgba(17,17,17,.45) 0%, rgba(17,17,17,.15) 60%, rgba(17,17,17,.0) 100%);
 }
 .hero-content {
   position: absolute;
